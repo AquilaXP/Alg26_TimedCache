@@ -1,0 +1,3 @@
+[submodule "External/Poco"]
+	path = External/Poco
+	url = https://github.com/pocoproject/poco.git

@@ -113,7 +113,6 @@ public:
     }
     size_t size() const
     {
-        std::lock_guard lg( m_lock );
         return m_data.size();
     }
     size_t capacity() const

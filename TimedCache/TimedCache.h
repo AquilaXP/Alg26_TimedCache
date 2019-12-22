@@ -7,6 +7,7 @@
 #include <thread>
 #include <mutex>
 #include <map>
+#include <unordered_map>
 #include <optional>
 #include <algorithm>
 #include <chrono>
@@ -186,6 +187,6 @@ private:
     mutable std::mutex m_lock;
     size_t m_size = 0;
     tick m_maxDTime{};
-    std::map< K, std::pair< T, timer > > m_data;
+    std::unordered_map< K, std::pair< T, timer > > m_data;
     std::map< timer, K > m_key;
 };
